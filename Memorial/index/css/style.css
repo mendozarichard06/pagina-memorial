@@ -1,212 +1,211 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 2;
-}
-
-img {
-    width: 100%;
-    height: 300px;
-    margin-top: 0;
-    padding: -2rem;
-}
-
-.fw-300 {
-    font-weight: 300;
-}
-
-.centrar-texto {
-    text-align: center;
-}
-
-.contenedor p {
-    margin-left: auto;
-    padding: 0;
-}
-
-.contenedor img {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.clearfix::after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
-.barra {
-    display: flex;
-    background-color: black;
-    width: 100%;
-    justify-content: center;
-}
-
-.barra2 {
-    background-image: url(img/logotipo1.png);
-    width: 100%;
-}
-
-@media (min-width: 300px) {
-    .barra,
-    .barra2 {
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 2;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    .site-header {
+        padding: 0 0;
+    }
+    
+    .fw-300 {
+        font-weight: 300;
+    }
+    
+    .centrar-texto {
         text-align: center;
-        background-color: black;
-        float: left;
     }
-}
-
-.site-header {
-    margin-top: 0;
-}
-
-h1 {
-    font-size: 3.8;
-}
-
-h2 {
-    font-size: 3.4;
-}
-
-h3 {
-    font-size: 3;
-}
-
-h4 {
-    font-size: 2.6;
-}
-
-.contenido-principal {
-    padding: 20px;
-}
-
-@media (min-width:768px) {
-    .contenido-principal {
-        width: 70%;
-        float: left;
-        padding: 0 60px 0 0;
+    
+    .contenedor {
+        max-width: 1200px;
+        width: 100%;
+        margin: 2rem;
     }
-}
-
-.navegacion-principal a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    display: block;
-    text-align: center;
-    padding: 20px;
-}
-
-@media (min-width:768px) {
+    
+    .clearfix::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    /**navegacion**/
+    
     .navegacion-principal a {
-        display: inline-block;
-        margin-right: 40px;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        display: block;
+        text-align: center;
+        padding: 20px;
     }
-}
-
-.navegacion-principal a:hover {
-    background-color: aqua;
-}
-
-.entrada {
-    margin-top: 60px;
-    padding: 2rem 4rem 0 2rem;
-}
-
-.entrada p {
-    display: block;
-}
-
-@media (min-width: 480px) {
-    .entrada img {
-        width: 300px;
-        float: left;
-        margin: 0 30px 30px 0;
+    
+    @media (min-width:768px) {
+        .navegacion-principal a {
+            display: inline-block;
+            margin-right: 40px;
+        }
     }
-}
-
-#pre-header {
-    background-image: url('./img/logotipo2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-}
-
-#pre-header2 {
-    background-image: url('./img/bart1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-}
-
-#pre-header3 {
-    background-image: url('./img/lisa2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-}
-
-#pre-header4 {
-    background-image: url('./img/maggie1.jfif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-}
-
-#pre-header5 {
-    background-image: url('./img/marge2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-}
-
-#pre-header6 {
-    background-image: url('./img/homero1.jfif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 500px;
-}
-
-section {
-    display: flex;
+    
+    .navegacion-principal a:hover {
+        background-color: aqua;
+    }
+    
+    .barra {
+        display: flex;
+        background-color: black;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .barra2 {
+        background-image: url(img/logotipo1.png);
+        width: 100%;
+    }
+    
+    @media (min-width: 300px) {
+        .barra,
+        .barra2 {
+            text-align: center;
+            background-color: black;
+            float: left;
+        }
+    }
+    
+    h1 {
+        font-size: 3.8;
+    }
+    
+    h2 {
+        font-size: 3.4;
+    }
+    
+    h3 {
+        font-size: 3;
+    }
+    
+    h4 {
+        font-size: 2.6;
+    }
+    /**contenedores principales**/
+    
+    .contenido-principal,
+    .sidebar {
+        padding: 20px;
+    }
+    
+    .sidebar {
+        float: right;
+    }
+    
+    .testimoniales {
+        background-color: aqua;
+        border-radius: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+        .contenido-principal {
+            width: 70%;
+            float: left;
+            padding-right: 60px;
+        }
+        .sidebar {
+            width: 20%;
+        }
+    }
+    /** .entrada {
+        display: grid;
+        grid-row: 1 2;
+        margin-top: 60px;
+        padding: 0;
+    }
+    
+    .entrada p {
+        display: block;
+    }
+    **/
+    /** @media (min-width: 768px) {
+        .entrada img {
+            max-width: 100%;
+            justify-content: space-between;
+            margin: 0;
+        }
+    }***/
+    
+    #pre-header {
+        background-image: url('./img/logotipo2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+    #pre-header2 {
+        background-image: url('./img/bart1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+    #pre-header3 {
+        background-image: url('./img/lisa2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+    #pre-header4 {
+        background-image: url('./img/maggie1.jfif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+    #pre-header5 {
+        background-image: url('./img/marge2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+    #pre-header6 {
+        background-image: url('./img/homero1.jfif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    /**section {
+        display: grid;
+        align-items: center;
+    }**/
+    /** .testimoniales {
+        font-size: 1.8rem;
+        padding: 1rem;
+        color: black;
+    }
+    /**section {
+        margin-left: 170px;
+    }
+    **/
+    /**.video {
+    background: url(video1.mp4);
     justify-content: space-between;
-    align-items: center;
-}
-
-.testimoniales {
-    background-color: aqua;
-    font-size: 1.8rem;
-    padding: 1rem;
-    color: black;
-    border-radius: 2rem;
-}
-
-section {
-    margin-left: 170px;
-}
-
-.testimoniales blockquote {
-    position: relative;
-    padding-left: 5rem;
-    font-weight: 300;
-}
-
-.testimoniales {
-    display: grid;
-}
+    width: 300px;
+    height: 300px;
+}**/
