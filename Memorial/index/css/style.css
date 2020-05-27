@@ -74,6 +74,14 @@
         width: 100%;
     }
     
+    .barra3 {
+        background-image: url(img/facebook1.jpg);
+        display: flex;
+        background-color: black;
+        width: 100%;
+        justify-content: center;
+    }
+    
     @media (min-width: 300px) {
         .barra,
         .barra2 {
@@ -118,7 +126,7 @@
         .contenido-principal {
             width: 70%;
             float: left;
-            padding-right: 60px;
+            padding-right: 0 60px 0 0;
         }
         .sidebar {
             width: 20%;
@@ -185,6 +193,14 @@
     
     #pre-header6 {
         background-image: url('./img/homero1.jfif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+    #pre-header7 {
+        background-image: url('./img/fox1.jfif');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
