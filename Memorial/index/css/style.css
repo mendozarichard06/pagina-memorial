@@ -36,13 +36,45 @@
     
     .contenedor {
         max-width: 1200px;
-        width: 100%;
+        margin: 0 auto;
     }
     
     .clearfix::after {
         content: '';
         clear: both;
         display: block;
+    }
+    /**Navegacion mobile-menu**/
+    
+    #nav:target {
+        max-height: 800px;
+        transition: .5s;
+    }
+    
+    .barra {
+        overflow: hidden;
+    }
+    
+    .mobile-menu {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+        padding: 20px 0;
+    }
+    
+    .navegacion-principal {
+        max-height: 0;
+    }
+    
+    @media (min-width:768px) {
+        .navegacion-principal {
+            max-height: unset;
+        }
+        .mobile-menu,
+        .cerrar {
+            display: none!important;
+        }
     }
     /**navegacion**/
     
@@ -67,8 +99,7 @@
     }
     
     .barra {
-        display: flex;
-        background-color: black;
+        display: grid;
         width: 100%;
         justify-content: center;
     }
